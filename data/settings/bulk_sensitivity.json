@@ -1,0 +1,20 @@
+{
+  "formula": "PureKinetics = DeltaPeakMinAngle - BulkSensitivity * DeltaTirAngle",
+  "device_serial": "326",
+  "bulk_sensitivity": {
+    "0": 1.5934355051406113,
+    "1": 1.3163693763207198,
+    "2": 1.2560026566024527,
+    "4": 1.1543942747104796
+  },
+  "channel_labels": {
+    "0": "L1 670nm",
+    "1": "L2 785nm",
+    "2": "L3 670nm",
+    "4": "L5 785nm",
+    "5": "L6 850nm",
+    "6": "L7 980nm"
+  },
+  "pure_kinetics_reference": "zero at the experiment-specific selected PeakMin/TIR reference; no vendor offset",
+  "note": "This reusable device profile stores only S_bulk. Baseline Peak/TIR angles are obtained from each measurement."
+}

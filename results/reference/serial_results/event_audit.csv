@@ -1,0 +1,9 @@
+type,elapsed_s,timestamp,concentration_value,concentration_unit,sample,comment,flowulmin,flowchannels
+user,114.937,2026-09-13T15:57:32.0,0.000000E+0,-,-,"#AS #START RUN TABLE (Plate 96 Vials, NeedleH 1.0 mm)","10,0",Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;
+user,123.089,2026-09-13T15:57:36.0,0.000000E+0,-,-,"#AS #FLOW:10,0","10,0",Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;
+user,228.485,2026-09-13T15:59:21.0,1.000000E+0,x,PBS -,#AS #INJECTION#POS:Sample Line 1 #MODE: SERIAL,"10,0",Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj1;
+user,2030.447,2026-09-13T16:29:22.0,0.000000E+0,,,#AS #INJ END,"10,0",Flow Selection Valve: Serial; Injection Valve 1: Inject; Injection Valve 2: Load; Sample Selection Valve: Inj1;
+user,2079.108,2026-09-13T16:30:12.0,0.000000E+0,-,-,"#AS #FLOW:10,0","10,0",Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj2;
+user,2184.728,2026-09-13T16:31:58.0,1.000000E+0,mM,Biotin -,#AS #INJECTION#POS:Sample Line 2 #MODE: SERIAL,"10,0",Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj1;
+user,4586.111,2026-09-13T17:12:00.0,0.000000E+0,,,#AS #INJ END,"10,0",Flow Selection Valve: Serial; Injection Valve 1: Inject; Injection Valve 2: Load; Sample Selection Valve: Inj1;
+user,4634.941,2026-09-13T17:12:46.0,0.000000E+0,-,-,#AS # RUN TABLE FINISHED,"10,0",Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj2;

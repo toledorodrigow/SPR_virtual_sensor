@@ -1,0 +1,759 @@
+{
+  "injection_min": 35.302033333333334,
+  "programmed_duration_min": 25.13583333333333,
+  "reference_programmed_duration_min": 40.02305,
+  "calibration": "Prior-record empirical SPR map and bulk S frozen; no new-record calibration fit used in primary results. Absolute accuracy and transfer remain unvalidated.",
+  "experiment": "Same reagent, buffer, flow and rinse; different sensor, user confirmed.",
+  "endpoint": "Descriptive comparison at 15-20 min after local TIR rinse midpoint, with 10-15 and 20-24 min sensitivity. Windows chosen after acquisition; no prespecified equivalence margin or replicate inference.",
+  "fronts": [
+    {
+      "channel": "L1",
+      "causal_arrival_after_injection_min": 7.297933333333333,
+      "rise50_after_injection_min": 6.809072255497746,
+      "rinse50_after_injection_min": 31.32403559998935,
+      "midpoint_exposure_min": 24.514963344491605,
+      "reference_midpoint_exposure_min": 24.77390879555385,
+      "reference_rinse50_after_injection_min": 31.493886024432676,
+      "rising": {
+        "t10_min": 41.46643486506944,
+        "t50_min": 42.11110558883108,
+        "t90_min": 42.75577631259272,
+        "width10_90_min": 1.2893414475232798,
+        "amplitude_mdeg": 68.97510884157886,
+        "drift_mdeg_min": 0.29724718008734263,
+        "rmse_mdeg": 2.2130730661967,
+        "parameters": [
+          -2.520175595316037,
+          0.29724718008734263,
+          68.97510884157886,
+          42.11110558883108,
+          0.2934022905128793
+        ],
+        "center_min": 41.63989999999999
+      },
+      "falling": {
+        "t10_min": 65.49155106234498,
+        "t50_min": 66.62606893332268,
+        "t90_min": 67.76058680430039,
+        "width10_90_min": 2.269035741955396,
+        "amplitude_mdeg": 117.29145700452113,
+        "drift_mdeg_min": 0.1493842734698128,
+        "rmse_mdeg": 1.93107123590601,
+        "parameters": [
+          5.6565703612479865,
+          0.1493842734698128,
+          117.29145700452113,
+          66.62606893332268,
+          0.5163413347365329
+        ],
+        "center_min": 68.88989999999998
+      }
+    },
+    {
+      "channel": "L2",
+      "causal_arrival_after_injection_min": 7.297933333333333,
+      "rise50_after_injection_min": 6.805252552622903,
+      "rinse50_after_injection_min": 31.33950617808167,
+      "midpoint_exposure_min": 24.534253625458767,
+      "reference_midpoint_exposure_min": 24.80155695888447,
+      "reference_rinse50_after_injection_min": 31.50999587814119,
+      "rising": {
+        "t10_min": 41.46758861137882,
+        "t50_min": 42.10728588595624,
+        "t90_min": 42.74698316053365,
+        "width10_90_min": 1.2793945491548253,
+        "amplitude_mdeg": 70.09083853103446,
+        "drift_mdeg_min": 0.22049454148023656,
+        "rmse_mdeg": 2.127649222338804,
+        "parameters": [
+          -2.4638572097615548,
+          0.22049454148023656,
+          70.09083853103446,
+          42.10728588595624,
+          0.29113877624331985
+        ],
+        "center_min": 41.63989999999999
+      },
+      "falling": {
+        "t10_min": 65.53107573478982,
+        "t50_min": 66.641539511415,
+        "t90_min": 67.75200328804019,
+        "width10_90_min": 2.220927553250359,
+        "amplitude_mdeg": 116.27090071942966,
+        "drift_mdeg_min": 0.11954012312976134,
+        "rmse_mdeg": 1.8957521628136456,
+        "parameters": [
+          5.910097939145626,
+          0.11954012312976134,
+          116.27090071942966,
+          66.641539511415,
+          0.5053938446162102
+        ],
+        "center_min": 68.88989999999998
+      }
+    },
+    {
+      "channel": "L3",
+      "causal_arrival_after_injection_min": 4.458199999999998,
+      "rise50_after_injection_min": 4.540960399696772,
+      "rinse50_after_injection_min": 29.107838900452073,
+      "midpoint_exposure_min": 24.5668785007553,
+      "reference_midpoint_exposure_min": 24.786278745431837,
+      "reference_rinse50_after_injection_min": 29.257415299799966,
+      "rising": {
+        "t10_min": 39.42493680212486,
+        "t50_min": 39.842993733030106,
+        "t90_min": 40.26105066393535,
+        "width10_90_min": 0.8361138618104957,
+        "amplitude_mdeg": 61.58281272644023,
+        "drift_mdeg_min": 2.947740547906531,
+        "rmse_mdeg": 1.3114311095269973,
+        "parameters": [
+          9.303286690868307,
+          2.947740547906531,
+          61.58281272644023,
+          39.842993733030106,
+          0.190265908736591
+        ],
+        "center_min": 41.63989999999999
+      },
+      "falling": {
+        "t10_min": 63.342037324757705,
+        "t50_min": 64.4098722337854,
+        "t90_min": 65.47770714281312,
+        "width10_90_min": 2.1356698180554066,
+        "amplitude_mdeg": 118.59716952496132,
+        "drift_mdeg_min": 0.030357103610879368,
+        "rmse_mdeg": 1.8246858120269571,
+        "parameters": [
+          2.3841110575069036,
+          0.030357103610879368,
+          118.59716952496132,
+          64.4098722337854,
+          0.48599261087925794
+        ],
+        "center_min": 68.88989999999998
+      }
+    },
+    {
+      "channel": "L5",
+      "causal_arrival_after_injection_min": 4.593499999999999,
+      "rise50_after_injection_min": 4.546815439502922,
+      "rinse50_after_injection_min": 29.117854404745835,
+      "midpoint_exposure_min": 24.571038965242913,
+      "reference_midpoint_exposure_min": 24.79045878722947,
+      "reference_rinse50_after_injection_min": 29.25351964804424,
+      "rising": {
+        "t10_min": 39.41020414711035,
+        "t50_min": 39.848848772836256,
+        "t90_min": 40.28749339856216,
+        "width10_90_min": 0.8772892514518098,
+        "amplitude_mdeg": 62.84105930922705,
+        "drift_mdeg_min": 2.6653211243853767,
+        "rmse_mdeg": 1.324611378280389,
+        "parameters": [
+          8.29118240375597,
+          2.6653211243853767,
+          62.84105930922705,
+          39.848848772836256,
+          0.1996357724423831
+        ],
+        "center_min": 41.63989999999999
+      },
+      "falling": {
+        "t10_min": 63.34692581434585,
+        "t50_min": 64.41988773807917,
+        "t90_min": 65.49284966181249,
+        "width10_90_min": 2.1459238474666367,
+        "amplitude_mdeg": 116.87929529502932,
+        "drift_mdeg_min": 0.030352924547586528,
+        "rmse_mdeg": 1.7676991022942057,
+        "parameters": [
+          2.056014918532559,
+          0.030352924547586528,
+          116.87929529502932,
+          64.41988773807917,
+          0.48832601582952967
+        ],
+        "center_min": 68.88989999999998
+      }
+    }
+  ],
+  "calibrations": [
+    {
+      "channel": "L1",
+      "transferred": [
+        0.001423336858708154,
+        40.6902534764661,
+        0.011382457714584297
+      ],
+      "new_record_diagnostic_only": [
+        0.0014191994476426834,
+        40.77401838363255,
+        0.011594670598100031
+      ],
+      "slope_difference_pct": -0.2906838982042248,
+      "quality": {
+        "ok": 672
+      }
+    },
+    {
+      "channel": "L2",
+      "transferred": [
+        0.0014541351642637398,
+        40.17645917522706,
+        0.005390869595656468
+      ],
+      "new_record_diagnostic_only": [
+        0.001453090408578982,
+        40.19553776367983,
+        0.005583857062277512
+      ],
+      "slope_difference_pct": -0.07184721960057372,
+      "quality": {
+        "ok": 672
+      }
+    },
+    {
+      "channel": "L3",
+      "transferred": [
+        0.0014153517423008616,
+        40.91649735141462,
+        0.012205692657117018
+      ],
+      "new_record_diagnostic_only": [
+        0.0013928699251326802,
+        41.36696822373983,
+        0.012832543017415815
+      ],
+      "slope_difference_pct": -1.5884261485158424,
+      "quality": {
+        "ok": 672
+      }
+    },
+    {
+      "channel": "L5",
+      "transferred": [
+        0.0014514810492031608,
+        40.2556773415372,
+        0.006507250918156904
+      ],
+      "new_record_diagnostic_only": [
+        0.00144224412067644,
+        40.42056672259101,
+        0.006602316922114098
+      ],
+      "slope_difference_pct": -0.6363795470696432,
+      "quality": {
+        "ok": 672
+      }
+    }
+  ],
+  "endpoints": [
+    {
+      "channel": "L1",
+      "method": "centroid",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 23.04527526692117,
+      "reference_mean_mdeg": 35.18705341452399,
+      "difference_mdeg": -12.141778147602817,
+      "short_over_reference": 0.6549362060935994,
+      "short_within_window_sd": 1.2459386043898084,
+      "reference_within_window_sd": 1.7992002320675675,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L1",
+      "method": "centroid",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 20.66783133341842,
+      "reference_mean_mdeg": 31.19386842081892,
+      "difference_mdeg": -10.5260370874005,
+      "short_over_reference": 0.6625607011801274,
+      "short_within_window_sd": 0.6441142962348964,
+      "reference_within_window_sd": 1.0365147672476607,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L1",
+      "method": "centroid",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 21.218486834070816,
+      "reference_mean_mdeg": 29.980786900538078,
+      "difference_mdeg": -8.762300066467262,
+      "short_over_reference": 0.7077361546400905,
+      "short_within_window_sd": 0.5952373111779334,
+      "reference_within_window_sd": 0.4313844376992104,
+      "short_samples": 29,
+      "reference_samples": 30
+    },
+    {
+      "channel": "L1",
+      "method": "vendor",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 21.456650740055725,
+      "reference_mean_mdeg": 34.268302955086554,
+      "difference_mdeg": -12.81165221503083,
+      "short_over_reference": 0.6261369513447367,
+      "short_within_window_sd": 1.5731971690153654,
+      "reference_within_window_sd": 1.9984754027326332,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L1",
+      "method": "vendor",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 18.772446537157226,
+      "reference_mean_mdeg": 30.095868259719087,
+      "difference_mdeg": -11.32342172256186,
+      "short_over_reference": 0.6237549412150586,
+      "short_within_window_sd": 1.1080873517449001,
+      "reference_within_window_sd": 1.3472412514870242,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L1",
+      "method": "vendor",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 19.32373274982556,
+      "reference_mean_mdeg": 28.914873835377026,
+      "difference_mdeg": -9.591141085551467,
+      "short_over_reference": 0.6682973219887679,
+      "short_within_window_sd": 0.9100636618593121,
+      "reference_within_window_sd": 1.0252159874874174,
+      "short_samples": 29,
+      "reference_samples": 30
+    },
+    {
+      "channel": "L1",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 40.4631915924533,
+      "reference_mean_mdeg": 28.517720069089666,
+      "difference_mdeg": 11.945471523363633,
+      "short_over_reference": 1.418878910881495,
+      "short_within_window_sd": 1.2459386043898084,
+      "reference_within_window_sd": 1.7992002320684028,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L1",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 38.08574765895055,
+      "reference_mean_mdeg": 24.524535075384698,
+      "difference_mdeg": 13.561212583565855,
+      "short_over_reference": 1.5529651241860751,
+      "short_within_window_sd": 0.6441142962348964,
+      "reference_within_window_sd": 1.0365147672493564,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L1",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 38.63640315960295,
+      "reference_mean_mdeg": 23.311453555105132,
+      "difference_mdeg": 15.324949604497817,
+      "short_over_reference": 1.6574000016031478,
+      "short_within_window_sd": 0.5952373111779334,
+      "reference_within_window_sd": 0.4313844376974427,
+      "short_samples": 29,
+      "reference_samples": 30
+    },
+    {
+      "channel": "L2",
+      "method": "centroid",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 14.09247150850191,
+      "reference_mean_mdeg": 21.193114725337452,
+      "difference_mdeg": -7.100643216835541,
+      "short_over_reference": 0.6649551843200113,
+      "short_within_window_sd": 0.6196288394582039,
+      "reference_within_window_sd": 0.8458352870936791,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L2",
+      "method": "centroid",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 12.812642847166924,
+      "reference_mean_mdeg": 19.144904895492356,
+      "difference_mdeg": -6.332262048325433,
+      "short_over_reference": 0.6692455730184194,
+      "short_within_window_sd": 0.2817268599175903,
+      "reference_within_window_sd": 0.42811334392935174,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L2",
+      "method": "centroid",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 12.94413944008776,
+      "reference_mean_mdeg": 18.334930208057024,
+      "difference_mdeg": -5.390790767969264,
+      "short_over_reference": 0.7059824767917383,
+      "short_within_window_sd": 0.3678765497335529,
+      "reference_within_window_sd": 0.34015167434048915,
+      "short_samples": 29,
+      "reference_samples": 30
+    },
+    {
+      "channel": "L2",
+      "method": "vendor",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 12.501858945115993,
+      "reference_mean_mdeg": 20.382252839951015,
+      "difference_mdeg": -7.880393894835022,
+      "short_over_reference": 0.6133698292963595,
+      "short_within_window_sd": 0.6247884750757846,
+      "reference_within_window_sd": 0.817715897590745,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L2",
+      "method": "vendor",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 11.167310033576861,
+      "reference_mean_mdeg": 18.415044477916396,
+      "difference_mdeg": -7.247734444339535,
+      "short_over_reference": 0.6064231909387388,
+      "short_within_window_sd": 0.5082719721077331,
+      "reference_within_window_sd": 0.41179868166113925,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L2",
+      "method": "vendor",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 11.33388332762021,
+      "reference_mean_mdeg": 17.59719973502894,
+      "difference_mdeg": -6.26331640740873,
+      "short_over_reference": 0.6440731194895181,
+      "short_within_window_sd": 0.5086216369025798,
+      "reference_within_window_sd": 0.3766577985395702,
+      "short_samples": 29,
+      "reference_samples": 30
+    },
+    {
+      "channel": "L2",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 23.54838474617994,
+      "reference_mean_mdeg": 17.635024576016114,
+      "difference_mdeg": 5.913360170163827,
+      "short_over_reference": 1.3353190773664179,
+      "short_within_window_sd": 0.6196288394582039,
+      "reference_within_window_sd": 0.8458352870940423,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L2",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 22.268556084844956,
+      "reference_mean_mdeg": 15.586814746170775,
+      "difference_mdeg": 6.681741338674181,
+      "short_over_reference": 1.428679075711456,
+      "short_within_window_sd": 0.2817268599175903,
+      "reference_within_window_sd": 0.42811334392778483,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L2",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 22.400052677765792,
+      "reference_mean_mdeg": 14.77684005873507,
+      "difference_mdeg": 7.623212619030722,
+      "short_over_reference": 1.515889228598938,
+      "short_within_window_sd": 0.3678765497335529,
+      "reference_within_window_sd": 0.34015167434145716,
+      "short_samples": 29,
+      "reference_samples": 30
+    },
+    {
+      "channel": "L3",
+      "method": "centroid",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 9.065459880922491,
+      "reference_mean_mdeg": 34.471618026666164,
+      "difference_mdeg": -25.406158145743674,
+      "short_over_reference": 0.26298330046212903,
+      "short_within_window_sd": 0.8570609611187271,
+      "reference_within_window_sd": 0.9943269769214065,
+      "short_samples": 36,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L3",
+      "method": "centroid",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 7.122553163682381,
+      "reference_mean_mdeg": 30.8522493173853,
+      "difference_mdeg": -23.729696153702918,
+      "short_over_reference": 0.2308600935513901,
+      "short_within_window_sd": 0.715097302520961,
+      "reference_within_window_sd": 1.2648254255390552,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L3",
+      "method": "centroid",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 6.424451302680731,
+      "reference_mean_mdeg": 27.87903486188877,
+      "difference_mdeg": -21.45458355920804,
+      "short_over_reference": 0.2304402334767726,
+      "short_within_window_sd": 0.22337687108081525,
+      "reference_within_window_sd": 0.47316791452263507,
+      "short_samples": 30,
+      "reference_samples": 29
+    },
+    {
+      "channel": "L3",
+      "method": "vendor",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 9.247468999943319,
+      "reference_mean_mdeg": 35.13039231860288,
+      "difference_mdeg": -25.88292331865956,
+      "short_over_reference": 0.2632327278351068,
+      "short_within_window_sd": 1.1073263068037438,
+      "reference_within_window_sd": 1.2866243128101098,
+      "short_samples": 36,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L3",
+      "method": "vendor",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 7.480275846760698,
+      "reference_mean_mdeg": 31.457532313093072,
+      "difference_mdeg": -23.977256466332374,
+      "short_over_reference": 0.23778965788894066,
+      "short_within_window_sd": 1.3172248332330103,
+      "reference_within_window_sd": 1.2980003968230056,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L3",
+      "method": "vendor",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 6.369589931187147,
+      "reference_mean_mdeg": 28.169057805424835,
+      "difference_mdeg": -21.79946787423769,
+      "short_over_reference": 0.226120091597827,
+      "short_within_window_sd": 0.7433608707057805,
+      "reference_within_window_sd": 0.7651502896009468,
+      "short_samples": 30,
+      "reference_samples": 29
+    },
+    {
+      "channel": "L3",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 33.31688890098586,
+      "reference_mean_mdeg": 47.77754390061312,
+      "difference_mdeg": -14.460654999627259,
+      "short_over_reference": 0.6973336463316674,
+      "short_within_window_sd": 0.8570609611187271,
+      "reference_within_window_sd": 0.9943269769235127,
+      "short_samples": 36,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L3",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 31.37398218374575,
+      "reference_mean_mdeg": 44.15817519133496,
+      "difference_mdeg": -12.784193007589213,
+      "short_over_reference": 0.7104909124483518,
+      "short_within_window_sd": 0.7150973025209609,
+      "reference_within_window_sd": 1.2648254255389397,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L3",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 30.6758803227441,
+      "reference_mean_mdeg": 41.1849607358387,
+      "difference_mdeg": -10.509080413094601,
+      "short_over_reference": 0.744832088574757,
+      "short_within_window_sd": 0.22337687108081528,
+      "reference_within_window_sd": 0.4731679145240806,
+      "short_samples": 30,
+      "reference_samples": 29
+    },
+    {
+      "channel": "L5",
+      "method": "centroid",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 5.322593627369214,
+      "reference_mean_mdeg": 19.808451094876915,
+      "difference_mdeg": -14.485857467507701,
+      "short_over_reference": 0.2687031712815649,
+      "short_within_window_sd": 0.6401839314052947,
+      "reference_within_window_sd": 0.48502598589502816,
+      "short_samples": 36,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L5",
+      "method": "centroid",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 4.387505896020033,
+      "reference_mean_mdeg": 18.048432941403696,
+      "difference_mdeg": -13.660927045383662,
+      "short_over_reference": 0.24309622393614855,
+      "short_within_window_sd": 0.29356565524950073,
+      "reference_within_window_sd": 0.7345122963888203,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L5",
+      "method": "centroid",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 3.864995896691956,
+      "reference_mean_mdeg": 16.7619070157278,
+      "difference_mdeg": -12.896911119035844,
+      "short_over_reference": 0.23058211055969985,
+      "short_within_window_sd": 0.2852062332962415,
+      "reference_within_window_sd": 0.3640190630442779,
+      "short_samples": 30,
+      "reference_samples": 29
+    },
+    {
+      "channel": "L5",
+      "method": "vendor",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 5.251022766613056,
+      "reference_mean_mdeg": 20.33512461504919,
+      "difference_mdeg": -15.084101848436134,
+      "short_over_reference": 0.25822427282924,
+      "short_within_window_sd": 0.6330025001738417,
+      "reference_within_window_sd": 0.4735993441056439,
+      "short_samples": 36,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L5",
+      "method": "vendor",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 4.354843019534963,
+      "reference_mean_mdeg": 18.596616926759847,
+      "difference_mdeg": -14.241773907224884,
+      "short_over_reference": 0.23417393801710806,
+      "short_within_window_sd": 0.4410845699704902,
+      "reference_within_window_sd": 0.7328967122992037,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L5",
+      "method": "vendor",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 3.7507261855663576,
+      "reference_mean_mdeg": 17.464544387143743,
+      "difference_mdeg": -13.713818201577386,
+      "short_over_reference": 0.21476232659853395,
+      "short_within_window_sd": 0.37801592898185077,
+      "reference_within_window_sd": 0.4421678518680483,
+      "short_samples": 30,
+      "reference_samples": 29
+    },
+    {
+      "channel": "L5",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 10,
+      "rinse_age_end_min": 15,
+      "short_mean_mdeg": 19.660380187977253,
+      "reference_mean_mdeg": 27.251624423944367,
+      "difference_mdeg": -7.591244235967114,
+      "short_over_reference": 0.7214388354296728,
+      "short_within_window_sd": 0.6401839314052946,
+      "reference_within_window_sd": 0.4850259858949569,
+      "short_samples": 36,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L5",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 15,
+      "rinse_age_end_min": 20,
+      "short_mean_mdeg": 18.725292456628072,
+      "reference_mean_mdeg": 25.491606270470314,
+      "difference_mdeg": -6.766313813842242,
+      "short_over_reference": 0.7345669887550242,
+      "short_within_window_sd": 0.29356565524950073,
+      "reference_within_window_sd": 0.7345122963861541,
+      "short_samples": 37,
+      "reference_samples": 37
+    },
+    {
+      "channel": "L5",
+      "method": "centroid_initial_water",
+      "rinse_age_start_min": 20,
+      "rinse_age_end_min": 24,
+      "short_mean_mdeg": 18.202782457299993,
+      "reference_mean_mdeg": 24.205080344795533,
+      "difference_mdeg": -6.002297887495541,
+      "short_over_reference": 0.7520232198367345,
+      "short_within_window_sd": 0.2852062332962415,
+      "reference_within_window_sd": 0.36401906304174375,
+      "short_samples": 30,
+      "reference_samples": 29
+    }
+  ],
+  "role": "Validation of reference-selected exposure only. No validation-run kinetic model or stop replay."
+}

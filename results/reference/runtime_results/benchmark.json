@@ -1,0 +1,44 @@
+{
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700H",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "repetitions": 3,
+  "updates_per_replay": 77,
+  "readouts_per_update": 4,
+  "first_time_after_injection_min": 11.220216666666666,
+  "last_time_after_injection_min": 21.495599999999996,
+  "latency_ms": {
+    "mean": 36.600901731601724,
+    "median": 34.868,
+    "p95": 48.8039,
+    "maximum": 64.0886
+  },
+  "median_scan_spacing_s": 8.118999999999872,
+  "minimum_scan_spacing_s": 8.021999999999423,
+  "basic_residual_flops": {
+    "mean": 220539.22077922078,
+    "maximum": 347892
+  },
+  "expm1_calls": {
+    "mean": 55134.805194805194,
+    "maximum": 86973
+  },
+  "residual_calls": {
+    "mean": 716.5974025974026,
+    "maximum": 908
+  },
+  "maximum_fit_samples": 127,
+  "final_prefix_tracemalloc_peak_bytes": 85387,
+  "maximum_tail_time_response_payload_bytes": 7488,
+  "published_rate_verification": [
+    0.00825128974304442,
+    0.008703148709946776,
+    0.003942362143397703,
+    0.004206499065999838
+  ],
+  "scope": "Four sequential tail fits and three trailing 2-min HAC slopes per readout, at each eligible scan. Loaded preprocessed real signals and fixed calibration; no angular extraction, file IO, GUI, bootstrap, arrival detection, persistence/history bookkeeping or model C(t) inversion. Growing prefixes; unchanged four-start SciPy fit_tail.",
+  "operation_convention": "Per residual point: two multiplies plus two adds/subtracts = 4 basic FLOPs; one expm1 separately. Negation separately. Includes finite-difference residual callbacks. Excludes solver linear algebra, derivatives, array management and all other arithmetic. Not a hardware FLOP counter or total FLOP bound.",
+  "memory_scope": "tracemalloc peak incremental allocation for the final four-readout update after preload, separate from timings; not process RSS or full native workspace; input payload reported separately."
+}

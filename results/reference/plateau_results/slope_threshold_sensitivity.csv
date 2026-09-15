@@ -1,0 +1,25 @@
+channel,source,slope_margin_mdeg_min,first_sustained_min
+L1 670nm,Vendor,0.2,
+L1 670nm,Vendor,0.5,
+L1 670nm,Vendor,1.0,
+L1 670nm,Centroid + vendor TIR,0.2,
+L1 670nm,Centroid + vendor TIR,0.5,
+L1 670nm,Centroid + vendor TIR,1.0,57.097116666666665
+L2 785nm,Vendor,0.2,
+L2 785nm,Vendor,0.5,
+L2 785nm,Vendor,1.0,57.36725
+L2 785nm,Centroid + vendor TIR,0.2,
+L2 785nm,Centroid + vendor TIR,0.5,
+L2 785nm,Centroid + vendor TIR,1.0,57.36725
+L3 670nm,Vendor,0.2,
+L3 670nm,Vendor,0.5,
+L3 670nm,Vendor,1.0,
+L3 670nm,Centroid + vendor TIR,0.2,
+L3 670nm,Centroid + vendor TIR,0.5,
+L3 670nm,Centroid + vendor TIR,1.0,57.90773333333333
+L5 785nm,Vendor,0.2,
+L5 785nm,Vendor,0.5,
+L5 785nm,Vendor,1.0,
+L5 785nm,Centroid + vendor TIR,0.2,
+L5 785nm,Centroid + vendor TIR,0.5,
+L5 785nm,Centroid + vendor TIR,1.0,55.8809

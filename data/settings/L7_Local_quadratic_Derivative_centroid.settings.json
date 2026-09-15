@@ -1,0 +1,34 @@
+{
+  "source": "reference.spr2 (large angular record intentionally not bundled)",
+  "channel_id": 6,
+  "settings": {
+    "spr_lo": 15735.0,
+    "spr_hi": 16735.0,
+    "tir_lo": 14235.0,
+    "tir_hi": 14685.0,
+    "smooth_points": 21,
+    "fit_points": 21,
+    "centroid_fraction": 0.3,
+    "spr_method": "Local quadratic",
+    "tir_method": "Derivative centroid",
+    "baseline_start": 10,
+    "baseline_end": 30
+  },
+  "angle_calibration": [
+    0.0014530157859736173,
+    40.31502742566469,
+    0.0032809664999374553
+  ],
+  "bulk_sensitivity": null,
+  "bulk_sensitivity_source": "loaded from bulk_sensitivity_profile_device326.json",
+  "temporal_filter": "none",
+  "template_source": "first available channel scan; gain and offset fitted per scan",
+  "baseline_uses_future_until_min": 30,
+  "warning": "Empirical angle axis fitted using full-record vendor minima. TIR absolute angle is extrapolated. Bulk coefficient requires validation for these estimators; not an early-stop validation.",
+  "baseline_noise": {
+    "samples": 148,
+    "DeltaSPRAngle": 0.00010127392360708113,
+    "DeltaTIRAngle": 0.000565678509573655,
+    "PureKineticsCandidate": null
+  }
+}

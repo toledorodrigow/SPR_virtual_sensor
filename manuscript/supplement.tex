@@ -1,0 +1,366 @@
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts,graphicx,booktabs,cite,url,textcomp}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\graphicspath{{../python/latest/biotin_20260913/}}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\newcommand{\mainpaper}[1]{\href{SPR_smart_stop_current.pdf}{main paper, #1}}
+\begin{document}
+\title{Supplementary Material: SPR Virtual Sensor for Early Stopping}
+\author{Rodrigo T. Ara\'ujo, Mateus S. Marques,
+Arthur A. Melo, and Antonio M. N. Lima
+\thanks{\raggedright VIRTUS-CC, Department of Electrical Engineering, Universidade Federal de
+Campina Grande, Campina Grande, Brazil. E-mail:
+\{rodrigo.araujo,mateus.marques\}@ee.ufcg.edu.br;
+\{arthur.aprigio,amnlima\}@dee.ufcg.edu.br.}
+\thanks{\raggedright This work has been partially funded by SmartSens Base Systems,
+VIRTUS-CC, with resources from PPI HardwareBR of MCTI, grant 055/2023,
+signed with EMBRAPII.}}
+
+
+\markboth{Supplementary Material: SPR Virtual Sensor}{Ara\'ujo \textit{et al.}}
+\maketitle
+
+\begin{abstract}
+This supplement provides derivations and diagnostics beyond those presented
+in the main article on the surface plasmon resonance virtual sensor.
+The optical operator, moving-equilibrium error equation and parameter
+ambiguity are developed from the main model without reproducing its
+governing equations. Additional processing details specify centroid
+integration and the fitted solution-exchange fronts. Reference-experiment
+analyses provide transition-specific serial delays, fitted-prefix plots,
+the complementary wavelength derivatives and normalization under alternative
+time coordinates. For the independent experiment, additional wavelength
+comparisons extend the measured-response panels in
+the article. Endpoint sensitivity is documented for neighboring rinse
+windows, vendor-angle processing and an alternative baseline; the primary
+endpoint table remains in the main paper. Computational details specify
+the residual-call budget, allocation measurement and reproduction files,
+while the benchmark summary is cited from the article. Each section
+identifies the corresponding main-paper material so that shared definitions,
+results and experimental qualifications can be consulted directly. All
+additional panels use the saved experimental observations and fits.
+\end{abstract}
+\begin{IEEEkeywords}
+Delivery modeling, endpoint sensitivity, kinetic identifiability,
+reproducibility, surface plasmon resonance.
+\end{IEEEkeywords}
+\raggedbottom
+\noindent Read alongside the \mainpaper{Sections~II--V}. Notation,
+experimental conditions and decision criteria follow that article.
+Links below refer to its sections, equations, tables and figures.
+\tableofcontents
+
+\section{Additional model derivations}
+\subsection{Optical operator and a general response target}
+The forward chain and reference kinetic model are defined in the
+\mainpaper{Eqs.~(1)--(3) and Fig.~1}; the conference extension is described
+in its Introduction. An explicit form of the reflectance-minimum operator is
+\begin{equation}
+ H(d,n)=\arg\min_\theta\mathcal R_p(\theta;d,n)
+       -\arg\min_\theta\mathcal R_p(\theta;0,n).
+\end{equation}
+This operator concerns the surface-layer contribution at a fixed bulk
+condition; the bulk correction remains part of the main observation chain.
+For a general remaining fraction $\varepsilon$, the constant-input solution
+implies
+\begin{equation}\label{eq:virtualtime}
+ s_\varepsilon=-\tau\ln\varepsilon.
+\end{equation}
+The particular 99\% target and its injection-clock conversion are specified
+in the \mainpaper{Eqs.~(6) and (12)}.
+
+\subsection{Moving equilibrium under variable delivery}
+Starting from the \mainpaper{Eq.~(4)}, let
+$\lambda_j=1/\tau_{\rm rel,j}$,
+$\Gamma_{\rm eq,j}=k_aC_j/\lambda_j$, and
+$e_j=\Gamma_j-\Gamma_{\rm eq,j}$. Differentiating gives
+\begin{equation}
+ \dot e_j=-\lambda_j(t)e_j-\dot\Gamma_{\rm eq,j}(t).
+\end{equation}
+The additional forcing term shows why a fixed multiple of one time constant
+cannot generally predict completion during solution exchange. A possible
+delivery representation is
+\begin{equation}
+ C_j(t)=\int_0^\infty h_j(u)C_{\rm in}(t-u)\,du,
+\end{equation}
+where $h_j$ describes delay and dispersion. Applying this extension requires
+a calibrated input and propagation under a declared future flow protocol;
+the measured TIR fronts alone do not supply active-reagent concentration
+(\mainpaper{Section~II-B}).
+
+\subsection{Parameter ambiguity and forecast sensitivity}
+The non-identifiability discussed in the \mainpaper{Section~II-D} can be
+written explicitly. For any $0<\widetilde k_d<k_{\rm obs}$, the family
+\begin{equation}
+ \widetilde k_a=(k_{\rm obs}-\widetilde k_d)/C,\qquad
+ \widetilde R_{\max}=R_{\rm eq}\frac{k_{\rm obs}}{k_{\rm obs}-\widetilde k_d}
+\end{equation}
+preserves the same constant-concentration association curve.
+If $\widehat k_{\rm obs}=k_{\rm obs}(1+\delta)$ with $\delta>-1$,
+substitution into \eqref{eq:virtualtime} gives
+\begin{equation}
+ \frac{\widehat s_{99}}{s_{99}}=\frac{1}{1+\delta},\qquad
+ \frac{R_{\rm eq}-R(\widehat s_{99})}{R_{\rm eq}-R_0}
+ =100^{-1/(1+\delta)}.
+\end{equation}
+This is an analytical sensitivity result, not a synthetic validation
+experiment. The derivative-based remaining-response relation and its
+limitations are given in the \mainpaper{Eq.~(7) and Section~II-F}.
+
+\section{Additional extraction and front-fitting details}
+\subsection{Centroid integration}
+For the angular preprocessing and support-selection rule in the
+\mainpaper{Section~III-D}, the centroid on the selected lobe $\mathcal L$ is
+\begin{equation}
+ x_c=\frac{\int_{\mathcal L}x[I_\ell-I(x)]\,dx}
+ {\int_{\mathcal L}[I_\ell-I(x)]\,dx}.
+\end{equation}
+Boundary crossings are interpolated and integration uses the trapezoidal
+rule. The tested TIR alternatives comprise derivative-peak,
+derivative-centroid and template-shift estimators. Absolute TIR angles
+extrapolated from the SPR calibration are not treated as an independently
+calibrated observable. Bulk coefficients, baseline convention and the
+noise statistic are specified in the \mainpaper{Section~III-D}; derivative
+uncertainty and bootstrap settings are specified in its Sections~III-F--G.
+
+\subsection{Local transition fit}
+The timing procedure in the \mainpaper{Section~III-E} fits
+\begin{equation}
+ z(t)=b+m(t-t_c)+sA[1+e^{-(t-t_{50})/a}]^{-1},
+\end{equation}
+where $s$ specifies transition direction and $a>0$. The fitted markers are
+$t_{10}=t_{50}-a\ln9$ and $t_{90}=t_{50}+a\ln9$.
+For a decline, these denote fractions of downward exchange.
+The linear background absorbs local drift. A separate affine-scaled,
+time-shifted trace comparison provides a check independent of the logistic
+shape. Section~S3 shows the individual transitions; the complete
+sensorgrams remain in the \mainpaper{Fig.~2(A,B)}.
+
+\section{Complementary reference-experiment diagnostics}
+\subsection{Individual solution-exchange fronts}
+Figure~\ref{fig:fronts} expands the transition regions from the
+\mainpaper{Fig.~2(A)}. Table~\ref{tab:delay} gives the transition-specific
+delays underlying the range reported in its Section~IV-B.
+\begin{figure*}[tp]\centering
+\includegraphics[width=.96\textwidth]{paper_figures/serial_fronts.pdf}
+\caption{Individual normalized TIR transitions. Colored dotted lines mark
+the fitted midpoint of each readout; black dashed lines mark the available
+injection events. Normalization removes each fitted local background and
+amplitude. These panels expand the front shapes without repeating the
+full-record traces in the main paper.}
+\label{fig:fronts}
+\end{figure*}
+\begin{table*}[t]\centering
+\caption{Channel 1 minus channel 2 fitted $t_{50}$ (min).}
+\label{tab:delay}
+\begin{tabular}{lrr}\toprule
+Transition & L1--L3, 670 nm & L2--L5, 785 nm\\\midrule
+PBS rise & 2.215 & 2.221\\
+PBS decline & 2.185 & 2.195\\
+Biotin rise & 2.249 & 2.245\\
+Water-associated decline & 2.236 & 2.256\\\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Fitted prefixes and complementary derivative readouts}
+The parameter estimates are reported in the \mainpaper{Table~2}.
+Figure~\ref{fig:prefixfits} supplies the measured-prefix fit and later
+continuation for each readout. Figure~\ref{fig:extra-slopes} adds the
+785-nm slope panels; the corresponding 670-nm panels and summary statistics
+are in the \mainpaper{Fig.~2(C,D) and Table~1}.
+\begin{figure*}[tp]\centering
+\includegraphics[width=.96\textwidth]{paper_figures/tail_fits.pdf}
+\caption{Reference-run fitted prefixes and subsequent continuation for all
+four corrected readouts. The vertical line separates fitting and prediction
+intervals; the horizontal line is the fitted asymptote. The water-associated
+decline is excluded from the association target. Fit values and intervals
+are given in the \mainpaper{Table~2}.}
+\label{fig:prefixfits}
+\end{figure*}
+\begin{figure*}[tp]\centering
+\includegraphics[width=.96\textwidth]{paper_figures/supplement_slopes_785.pdf}
+\caption{Additional 785-nm derivative readouts, L2 and L5. Shading denotes
+the approximate corrected-slope 95\% interval; dotted lines mark
+$\pm0.5$ mdeg/min. These are the wavelength panels absent from the
+\mainpaper{Fig.~2(C,D)}.}
+\label{fig:extra-slopes}
+\end{figure*}
+
+\subsection{Timing decomposition and window sensitivity}
+Using the fitted values from the \mainpaper{Table~2}, define
+\begin{equation}
+ u_j=\frac{T-T_{0,j}}{\widehat\tau_j},\qquad
+ z_j=\frac{R_j-b_j}{A_j}.
+\end{equation}
+Table~\ref{tab:timing} separates the fitted tail-start offset from relaxation;
+Fig.~\ref{fig:normalization} displays the alternative clocks. Interpretation
+of the shared dimensionless target and the equal-local-age refit is given
+in the \mainpaper{Section~IV-E}. For that refit, the respective RMS residuals
+are 1.00, 0.68, 0.92 and 0.66 mdeg for L1, L2, L3 and L5. Small residuals
+therefore coexist with the rate sensitivity reported in the article.
+\begin{table*}[tp]\centering
+\caption{Decomposition of the main-paper forecasts, in minutes.
+$T_0$ is the causal tail-fit start and $a_{50}$ the retrospective local TIR
+midpoint; they are different timing markers.}
+\label{tab:timing}
+\begin{tabular}{lrrr}\toprule
+Readout & $T_0$ & $4.605\tau$ & $T_{99}-a_{50}$\\\midrule
+L1 & 7.17 & 9.30 & 9.75\\
+L2 & 7.17 & 8.82 & 9.28\\
+L3 & 4.46 & 19.47 & 19.45\\
+L5 & 4.46 & 18.25 & 18.24\\\bottomrule
+\end{tabular}
+\end{table*}
+\begin{figure*}[tp]\centering
+\includegraphics[width=.96\textwidth]{normalization_results/normalized_kinetics.pdf}
+\caption{Reference response under injection, local-arrival and fitted-time-
+constant normalization, with the forecast decomposition. Collapse of fitted
+curves follows the exponential model; it is not independent evidence of
+identical molecular dynamics.}
+\label{fig:normalization}
+\end{figure*}
+
+\section{Additional repeat-experiment and endpoint diagnostics}
+\subsection{Complementary measured-response comparisons}
+The validation experiment tests the approximately 25-min duration selected
+from the reference forecast, as specified in the
+\mainpaper{Sections~III-A--C and IV-F--H}. Its role is to provide the
+experimental outcome at that duration, not to generate a new prediction.
+Figure~\ref{fig:extra-repeat} adds L2 and L5 to the measured L1/L3 comparison
+in the main paper. No kinetic fit or stopping criterion is applied to
+these validation traces.
+\begin{figure*}[tp]\centering
+\includegraphics[width=.96\textwidth]{paper_figures/supplement_short_785.pdf}
+\caption{Additional 785-nm measured-response comparisons: L2 and L5 during
+exposure and after rinse. Baseline, reference-prediction and command
+markers, and rinse alignment follow the \mainpaper{Fig.~3}. No amplitude
+rescaling or validation-run model fit is applied.}
+\label{fig:extra-repeat}
+\end{figure*}
+
+\subsection{Additional endpoint windows and baseline conventions}
+The exposure definition and primary retained-response comparison are in the
+\mainpaper{Eq.~(13) and Table~3}. The tables below provide the neighboring
+rinse windows, vendor-angle sensitivity and initial-water baseline.
+The main-paper primary centroid rows are omitted. Values are within-run
+temporal means, in mdeg except ratios; rinse age follows each readout's
+local TIR midpoint. These comparisons use the qualification and limitations
+stated in the \mainpaper{Section~IV-H}.
+\begin{table*}[htbp]\centering\small
+\caption{Additional rinse windows: centroid, pre-injection baseline. The primary 15--20 min window is reported in the \mainpaper{Table~3}.}
+\begin{tabular}{llrrrr}\toprule
+Readout & Rinse age (min) & Reference & Repeat & Difference & Ratio (\%)\\\midrule
+L1 & 10--15 & 35.19 & 23.05 & -12.14 & 65.5\\
+L1 & 20--24 & 29.98 & 21.22 & -8.76 & 70.8\\
+L2 & 10--15 & 21.19 & 14.09 & -7.10 & 66.5\\
+L2 & 20--24 & 18.33 & 12.94 & -5.39 & 70.6\\
+L3 & 10--15 & 34.47 & 9.07 & -25.41 & 26.3\\
+L3 & 20--24 & 27.88 & 6.42 & -21.45 & 23.0\\
+L5 & 10--15 & 19.81 & 5.32 & -14.49 & 26.9\\
+L5 & 20--24 & 16.76 & 3.86 & -12.90 & 23.1\\
+\bottomrule\end{tabular}
+\end{table*}
+
+\begin{table*}[htbp]\centering\small
+\caption{Vendor, pre-injection baseline.}
+\begin{tabular}{llrrrr}\toprule
+Readout & Rinse age (min) & Reference & Repeat & Difference & Ratio (\%)\\\midrule
+L1 & 10--15 & 34.27 & 21.46 & -12.81 & 62.6\\
+L1 & 15--20 & 30.10 & 18.77 & -11.32 & 62.4\\
+L1 & 20--24 & 28.91 & 19.32 & -9.59 & 66.8\\
+L2 & 10--15 & 20.38 & 12.50 & -7.88 & 61.3\\
+L2 & 15--20 & 18.42 & 11.17 & -7.25 & 60.6\\
+L2 & 20--24 & 17.60 & 11.33 & -6.26 & 64.4\\
+L3 & 10--15 & 35.13 & 9.25 & -25.88 & 26.3\\
+L3 & 15--20 & 31.46 & 7.48 & -23.98 & 23.8\\
+L3 & 20--24 & 28.17 & 6.37 & -21.80 & 22.6\\
+L5 & 10--15 & 20.34 & 5.25 & -15.08 & 25.8\\
+L5 & 15--20 & 18.60 & 4.35 & -14.24 & 23.4\\
+L5 & 20--24 & 17.46 & 3.75 & -13.71 & 21.5\\
+\bottomrule\end{tabular}\end{table*}
+
+\begin{table*}[htbp]\centering\small
+\caption{Centroid, initial-water baseline.}
+\begin{tabular}{llrrrr}\toprule
+Readout & Rinse age (min) & Reference & Repeat & Difference & Ratio (\%)\\\midrule
+L1 & 10--15 & 28.52 & 40.46 & +11.95 & 141.9\\
+L1 & 15--20 & 24.52 & 38.09 & +13.56 & 155.3\\
+L1 & 20--24 & 23.31 & 38.64 & +15.32 & 165.7\\
+L2 & 10--15 & 17.64 & 23.55 & +5.91 & 133.5\\
+L2 & 15--20 & 15.59 & 22.27 & +6.68 & 142.9\\
+L2 & 20--24 & 14.78 & 22.40 & +7.62 & 151.6\\
+L3 & 10--15 & 47.78 & 33.32 & -14.46 & 69.7\\
+L3 & 15--20 & 44.16 & 31.37 & -12.78 & 71.0\\
+L3 & 20--24 & 41.18 & 30.68 & -10.51 & 74.5\\
+L5 & 10--15 & 27.25 & 19.66 & -7.59 & 72.1\\
+L5 & 15--20 & 25.49 & 18.73 & -6.77 & 73.5\\
+L5 & 20--24 & 24.21 & 18.20 & -6.00 & 75.2\\
+\bottomrule\end{tabular}\end{table*}
+
+
+
+
+\section{Computational accounting and reproduction details}
+\subsection{Replay configuration and residual-call budget}
+Benchmark hardware, summary timings, operation totals and allocation sizes
+are reported in the \mainpaper{Section~V-A and Table~4}.
+The common eligible interval spans 11.22--21.50 min after injection.
+The environment used Python 3.12.14, NumPy 2.5.3 and SciPy 1.18.1.
+For the residual arithmetic defined in that section, instrumenting all
+callbacks, including those used by the numerical Jacobian, gives
+\begin{equation}
+ F_{\rm residual}=4\sum_{j=1}^{4}N_jQ_j,\qquad
+ N_{\rm expm1}=\sum_{j=1}^{4}N_jQ_j,
+\end{equation}
+where $N_j$ is the current tail size and $Q_j$ is the residual-call count
+across all four initializations. No fixed FLOP equivalent is assigned to
+the transcendental operation. Negations are tracked separately in the
+export; the solver and covariance work are accounted for by elapsed time,
+not by this residual-only sum.
+The current implementation uses four initial rates and
+\texttt{max\_nfev}=1500 per start. This limit applies to objective
+evaluations separately from numerical-Jacobian evaluations.
+It is not a 40-iteration recursive solver. For three fitted parameters and
+a two-point Jacobian, the residual-call budget is at most
+$4(1+3)1500$ per readout; conditional on a buffer cap $N_{\max}$, this gives
+\begin{equation}
+ F_{\rm residual}\leq
+ 4\cdot4\cdot4\cdot(1+3)\cdot1500\,N_{\max}.
+\end{equation}
+This bounds only residual arithmetic under that configuration, not total
+computation. The present prefixes grow with acquisition: 127 is the
+observed maximum, not an implemented permanent memory cap. A deployment
+requiring a fixed worst-case budget must impose and validate such a cap.
+
+
+\subsection{Allocation measurement}
+The payload reported in the \mainpaper{Table~4} counts float64 tail times
+and responses. The incremental \texttt{tracemalloc} peak was measured
+during the final update after preloading. The shortest recorded acquisition
+interval was 8.022 s. Scope exclusions and the distinction between desktop
+timing and embedded feasibility are specified in the
+\mainpaper{Section~V-A}.
+\subsection{Reproduction files and consistency checks}
+The analysis repository contains the processing and numerical exports
+under \path{python/latest/biotin_20260913} and
+\path{python/latest/biotin_20260914}. The validation-experiment results use the processed-response CSV files
+and measured front/endpoint comparisons; kinetic fits and stopping replays
+of that experiment are excluded from this article. Reproduction of its
+figures requires only saved measured responses and front timing, not
+estimated kinetic parameters. All 672 scans per selected readout passed
+the extraction quality checks. The reference experiment alone supplies
+the reported kinetic forecasts and decision analysis.
+The timing script \path{benchmark_streaming.py} exports all 231 measured
+latencies and a separately instrumented residual-call replay. All 77
+callback counts agree with objective evaluations plus three times the
+numerical-Jacobian evaluation count. These checks concern implementation
+consistency, not chemical validity or between-sensor equivalence.
+
+
+\end{document}

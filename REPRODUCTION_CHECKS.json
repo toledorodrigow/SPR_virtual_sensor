@@ -1,0 +1,17 @@
+{
+  "notebook_code_cells_executed": 13,
+  "notebook_errors": 0,
+  "raw_reference_angles_checked": "4 readouts x 830 scans; matched CSVs",
+  "raw_validation_angles_checked": "4 readouts x 672 scans; matched CSVs",
+  "raw_spr2_included": false,
+  "reference_full_bootstrap_checked": true,
+  "reference_bootstrap_repetitions": 120,
+  "reference_point_rates_and_slopes_match": true,
+  "validation_endpoint_rows_checked": 36,
+  "validation_kinetic_fit_executed": false,
+  "empirical_figure_generators_executed": 7,
+  "conceptual_figure": "original TikZ compiled",
+  "runtime_residual_operation_counts_match": true,
+  "runtime_latency_scope": "Historical results retained; current hardware rerun written only to outputs/",
+  "publication_status": "Local package; not uploaded to GitHub"
+}

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this experimental reproducibility package and the associated paper when using these materials."
+type: software
+title: "SPR virtual sensor: experimental reproducibility package"
+authors:
+  - family-names: "Araújo"
+    given-names: "Rodrigo T."
+  - family-names: "Marques"
+    given-names: "Mateus S."
+  - family-names: "Melo"
+    given-names: "Arthur A."
+  - family-names: "Lima"
+    given-names: "Antonio M. N."
+abstract: "Processed experimental data, numerical methods and a step-by-step notebook for SPR virtual-sensor analysis and measured validation of a reference-selected exposure duration."

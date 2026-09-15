@@ -1,0 +1,125 @@
+{
+  "scans": 830,
+  "events": [
+    {
+      "type": "user",
+      "elapsed_s": 114.937,
+      "timestamp": "2026-09-13T15:57:32.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #START RUN TABLE (Plate 96 Vials, NeedleH 1.0 mm)",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 123.089,
+      "timestamp": "2026-09-13T15:57:36.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #FLOW:10,0",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 228.485,
+      "timestamp": "2026-09-13T15:59:21.0",
+      "concentration_value": "1.000000E+0",
+      "concentration_unit": "x",
+      "sample": "PBS -",
+      "comment": "#AS #INJECTION#POS:Sample Line 1 #MODE: SERIAL",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 2030.447,
+      "timestamp": "2026-09-13T16:29:22.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "",
+      "sample": "",
+      "comment": "#AS #INJ END",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Inject; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 2079.108,
+      "timestamp": "2026-09-13T16:30:12.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #FLOW:10,0",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj2;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 2184.728,
+      "timestamp": "2026-09-13T16:31:58.0",
+      "concentration_value": "1.000000E+0",
+      "concentration_unit": "mM",
+      "sample": "Biotin -",
+      "comment": "#AS #INJECTION#POS:Sample Line 2 #MODE: SERIAL",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 4586.111,
+      "timestamp": "2026-09-13T17:12:00.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "",
+      "sample": "",
+      "comment": "#AS #INJ END",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Inject; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 4634.941,
+      "timestamp": "2026-09-13T17:12:46.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS # RUN TABLE FINISHED",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj2;"
+    }
+  ],
+  "calibration": {
+    "0": [
+      0.001423336858708154,
+      40.6902534764661,
+      0.011382457714584297
+    ],
+    "1": [
+      0.0014541351642637398,
+      40.17645917522706,
+      0.005390869595656468
+    ],
+    "2": [
+      0.0014153517423008616,
+      40.91649735141462,
+      0.012205692657117018
+    ],
+    "4": [
+      0.0014514810492031608,
+      40.2556773415372,
+      0.006507250918156904
+    ],
+    "5": [
+      0.0014650844940539813,
+      40.088932219210896,
+      0.0038989235312830157
+    ],
+    "6": [
+      0.0014530157859736173,
+      40.31502742566469,
+      0.0032809664999374553
+    ]
+  }
+}

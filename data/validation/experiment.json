@@ -1,0 +1,200 @@
+{
+  "scans": 672,
+  "duration_min": 90.9625,
+  "header": {
+    "measurement_type": "ANGULAR-SCAN",
+    "start_time": "2026-09-14T22:22:56.3",
+    "user": "Rodrigo",
+    "liquid": "Water",
+    "temperature": "na",
+    "flow_rate": "na",
+    "test_plan": "water - pbs - biotin",
+    "ui_version": "6.7.2.4",
+    "device_serial": "326",
+    "firmware_version": "02.33",
+    "fpga_version": "Alfa.A.2.13",
+    "t_ctrl.Flow.gain": "8074",
+    "t_ctrl.Flow.offset": "32128",
+    "t_ctrl.Flow.a": "111",
+    "t_ctrl.Flow.b": "29292",
+    "t_ctrl.Flow.c": "27330",
+    "t_ctrl.Prism.gain": "8066",
+    "t_ctrl.Prism.offset": "32118",
+    "t_ctrl.Prism.a": "111",
+    "t_ctrl.Prism.b": "28723",
+    "t_ctrl.Prism.c": "28723",
+    "t_ctrl.Laser.gain": "8066",
+    "t_ctrl.Laser.offset": "32121",
+    "t_ctrl.Laser.a": "111",
+    "t_ctrl.Laser.b": "29292",
+    "t_ctrl.Laser.c": "27330"
+  },
+  "events": [
+    {
+      "type": "user",
+      "elapsed_s": 57.851,
+      "timestamp": "2026-09-14T22:23:58.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #START RUN TABLE (Plate 96 Vials, NeedleH 1.0 mm)",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Parallel; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 65.921,
+      "timestamp": "2026-09-14T22:24:02.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #FLOW:10,0",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Parallel; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 163.212,
+      "timestamp": "2026-09-14T22:25:45.0",
+      "concentration_value": "1.000000E+0",
+      "concentration_unit": "x",
+      "sample": "PBS -",
+      "comment": "#AS #INJECTION#POS:Sample Line 1 #MODE: SERIAL",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 1963.786,
+      "timestamp": "2026-09-14T22:55:47.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "",
+      "sample": "",
+      "comment": "#AS #INJ END",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Inject; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 1971.916,
+      "timestamp": "2026-09-14T22:55:49.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #POSTWAIT, Flow 10 ul/min.",
+      "flowulmin": "0,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 1971.916,
+      "timestamp": "2026-09-14T22:55:50.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #POSTWAIT, Flow 10 ul/min.",
+      "flowulmin": "0,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 2020.244,
+      "timestamp": "2026-09-14T22:56:37.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #FLOW:10,0",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj2;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 2118.122,
+      "timestamp": "2026-09-14T22:58:21.0",
+      "concentration_value": "1.000000E+0",
+      "concentration_unit": "mM",
+      "sample": "Biotin -",
+      "comment": "#AS #INJECTION#POS:Sample Line 2 #MODE: SERIAL",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 3626.272,
+      "timestamp": "2026-09-14T23:23:23.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "",
+      "sample": "",
+      "comment": "#AS #INJ END",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Inject; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 3626.272,
+      "timestamp": "2026-09-14T23:23:25.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #POSTWAIT, Flow 10 ul/min.",
+      "flowulmin": "0,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj1;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 3626.272,
+      "timestamp": "2026-09-14T23:23:25.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS #POSTWAIT, Flow 10 ul/min.",
+      "flowulmin": "0,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Waste;"
+    },
+    {
+      "type": "user",
+      "elapsed_s": 3666.787,
+      "timestamp": "2026-09-14T23:24:10.0",
+      "concentration_value": "0.000000E+0",
+      "concentration_unit": "-",
+      "sample": "-",
+      "comment": "#AS # RUN TABLE FINISHED",
+      "flowulmin": "10,0",
+      "flowchannels": "Flow Selection Valve: Serial; Injection Valve 1: Load; Injection Valve 2: Load; Sample Selection Valve: Inj2;"
+    }
+  ],
+  "injection_min": 35.302033333333334,
+  "new_record_calibration": {
+    "0": [
+      0.0014191994476426834,
+      40.77401838363255,
+      0.011594670598100031
+    ],
+    "1": [
+      0.001453090408578982,
+      40.19553776367983,
+      0.005583857062277512
+    ],
+    "2": [
+      0.0013928699251326802,
+      41.36696822373983,
+      0.012832543017415815
+    ],
+    "4": [
+      0.00144224412067644,
+      40.42056672259101,
+      0.006602316922114098
+    ],
+    "5": [
+      0.0014498928759163962,
+      40.349435054905165,
+      0.004652891473212562
+    ],
+    "6": [
+      0.0014572186395804408,
+      40.24668877373981,
+      0.003012893161593757
+    ]
+  },
+  "user_confirmation": "Same 1 mM Sulfo-NHS-SS-Biotin in PBS, flow and water rinse; a different sensor, confirmed 2026-09-15."
+}

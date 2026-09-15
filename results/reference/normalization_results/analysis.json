@@ -1,0 +1,83 @@
+{
+  "rows": [
+    {
+      "readout": "L1",
+      "physical_channel": 1,
+      "tau_min": 2.0198862378903755,
+      "kobs_per_s": 0.0082512897776232,
+      "arrival50_after_injection_min": 6.719977228878825,
+      "fit_start_after_injection_min": 7.166349999999994,
+      "relaxation99_from_tail_start_min": 9.301919881820407,
+      "T99_after_injection_min": 16.46826988182039,
+      "T99_after_arrival50_min": 9.748292652941565,
+      "T99_dimensionless": 4.6051701859880865,
+      "equal_local_age_tau_min": 0.9911709922175133,
+      "equal_local_age_rmse_mdeg": 1.0031747449186046,
+      "equal_local_age_parameter_boundary": false,
+      "equal_local_age_amplitude_mdeg": 4.87034879127515
+    },
+    {
+      "readout": "L2",
+      "physical_channel": 1,
+      "tau_min": 1.9150157470390448,
+      "kobs_per_s": 0.0087031486255067,
+      "arrival50_after_injection_min": 6.7084389192567215,
+      "fit_start_after_injection_min": 7.166349999999994,
+      "relaxation99_from_tail_start_min": 8.818973423961923,
+      "T99_after_injection_min": 15.985323423961916,
+      "T99_after_arrival50_min": 9.276884504705194,
+      "T99_dimensionless": 4.605170185988091,
+      "equal_local_age_tau_min": 2.2851923810527457,
+      "equal_local_age_rmse_mdeg": 0.6788919519230023,
+      "equal_local_age_parameter_boundary": false,
+      "equal_local_age_amplitude_mdeg": 2.4153612922169043
+    },
+    {
+      "readout": "L3",
+      "physical_channel": 2,
+      "tau_min": 4.227583907148707,
+      "kobs_per_s": 0.0039423621228389,
+      "arrival50_after_injection_min": 4.47113655436813,
+      "fit_start_after_injection_min": 4.456016666666663,
+      "relaxation99_from_tail_start_min": 19.468743367964276,
+      "T99_after_injection_min": 23.924760034630935,
+      "T99_after_arrival50_min": 19.453623480262806,
+      "T99_dimensionless": 4.605170185988091,
+      "equal_local_age_tau_min": 28.93752491772061,
+      "equal_local_age_rmse_mdeg": 0.9197955183082038,
+      "equal_local_age_parameter_boundary": false,
+      "equal_local_age_amplitude_mdeg": 52.32826631422201
+    },
+    {
+      "readout": "L5",
+      "physical_channel": 2,
+      "tau_min": 3.9621230556539,
+      "kobs_per_s": 0.0042064989987838,
+      "arrival50_after_injection_min": 4.463060860814771,
+      "fit_start_after_injection_min": 4.456016666666663,
+      "relaxation99_from_tail_start_min": 18.24625096911338,
+      "T99_after_injection_min": 22.70226763578004,
+      "T99_after_arrival50_min": 18.239206774965268,
+      "T99_dimensionless": 4.605170185988091,
+      "equal_local_age_tau_min": 72.93853795211432,
+      "equal_local_age_rmse_mdeg": 0.6554148935523566,
+      "equal_local_age_parameter_boundary": false,
+      "equal_local_age_amplitude_mdeg": 57.70685872176812
+    }
+  ],
+  "pairs": [
+    {
+      "pair": "L1/L2",
+      "relative_tau_difference_percent": 5.330272075542525,
+      "relative_k_difference_percent": 5.330272075541975,
+      "T99_difference_min": 0.4829464578584748
+    },
+    {
+      "pair": "L3/L5",
+      "relative_tau_difference_percent": 6.482792429583184,
+      "relative_k_difference_percent": 6.482792429583134,
+      "T99_difference_min": 1.2224923988508962
+    }
+  ],
+  "interpretation": "Arrival alignment does not remove the fitted between-channel timescale difference. Scaling each fit by its own tau forces its model T99 to ln(100); this is an identity, not validation. Equal-local-age fits are retrospective sensitivity checks using 1\u20139 min after each TIR midpoint, not replacement forecasts or stop decisions."
+}
