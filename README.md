@@ -92,10 +92,3 @@ Proceedings citation: Rodrigo T. Araújo, Arthur A. Melo and Antonio M. N. Lima,
 "SPR virtual sensor: real-time kinetic estimation and active control via nonlinear
 least squares," 2026 IEEE Sensors Applications Symposium (SAS), IEEE, pp. 1–6.
 The journal manuscript has the additional author Mateus S. Marques.
-
-## Publication
-
-This is a local, GitHub-ready folder; no repository has been created or pushed.
-No repository URL, DOI or reuse license has been invented. The authors should
-choose the code/data licenses and confirm publication rights before release.
-After uploading, insert the actual repository or archived-release link in the paper.
